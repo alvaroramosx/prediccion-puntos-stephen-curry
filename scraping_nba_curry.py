@@ -80,6 +80,7 @@ df = pd.DataFrame(all_data)
 
 # Guardar el DataFrame en un archivo CSV
 csv_file = 'nba_juego_a_juego.csv'
+
 df.to_csv(csv_file, index=False, header=['Año'] + [f'Tabla {i+1}' for i in range(len(df.columns) - 1)])
 
 print(f"Datos guardados en {csv_file}")
